@@ -41,13 +41,22 @@ a{color:inherit}
 }
 em{font-style:italic}
 
+/* ===== intro splash ===== */
+.splash{position:fixed;inset:0;z-index:100;display:flex;align-items:center;justify-content:center}
+.splash-bg{position:absolute;inset:0;background:var(--cream);transition:opacity .8s ease}
+.splash-anim{
+  position:relative;width:min(540px,82vw);height:auto;
+  transform-origin:0 0;will-change:transform;
+}
+
 /* ===== nav ===== */
 .nav{
   max-width:1080px;margin:0 auto;padding:22px 24px;
   display:flex;align-items:center;justify-content:space-between;
 }
-.nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
-.nav-word{font-family:var(--serif);font-size:22px;color:var(--jungle)}
+.nav-logo{display:flex;align-items:center;text-decoration:none}
+.nav-logo-img{height:36px;width:auto;display:block;transition:opacity .3s ease}
+body.intro .nav-logo-img{opacity:0}
 .nav-links{display:flex;align-items:center;gap:24px;font-size:14px;font-weight:500}
 .nav-links a{text-decoration:none;color:var(--jungle)}
 .nav-signin{
@@ -57,9 +66,18 @@ em{font-style:italic}
 .nav-signin:hover{background:var(--jungle);color:var(--cream)}
 
 /* ===== hero ===== */
-.hero{max-width:760px;margin:0 auto;padding:28px 24px 64px;text-align:center}
-.hero-mark{display:flex;justify-content:center;margin-bottom:8px}
-.hero-anim{width:min(420px,72vw);height:auto}
+.hero{max-width:760px;margin:0 auto;padding:64px 24px;text-align:center}
+.hero-eyebrow{
+  display:inline-flex;align-items:center;gap:9px;margin-bottom:22px;
+  padding:7px 16px;border:1px solid var(--line);border-radius:999px;
+  font-size:12.5px;font-weight:500;letter-spacing:.02em;color:var(--soft);
+  background:var(--paper);
+}
+.hero-eyebrow .dot{
+  width:7px;height:7px;border-radius:50%;background:var(--jungle);
+  box-shadow:0 0 0 0 rgba(13,74,42,.45);animation:pulse 2.4s ease-out infinite;
+}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(13,74,42,.4)}70%,100%{box-shadow:0 0 0 7px rgba(13,74,42,0)}}
 .hero-h{
   font-family:var(--serif);font-weight:400;
   font-size:clamp(32px,5.4vw,52px);line-height:1.16;
