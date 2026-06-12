@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grüp — Collect money from your group, the easy way</title>
+<meta name="description" content="One amount. Many payers. One link. Grüp gives everyone their own way to pay — and shows you exactly who has.">
+<meta property="og:title" content="Grüp — Collect money from your group, the easy way">
+<meta property="og:description" content="One amount. Many payers. One link. Grüp gives everyone their own way to pay — and shows you exactly who has.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://grup.co.za">
+<meta property="og:image" content="https://grup.co.za/assets/og-home.png">
+<link rel="icon" type="image/svg+xml" href="assets/grup-logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <a class="nav-logo" href="/" aria-label="Grüp home">
+    <img src="assets/grup-logo.svg" alt="" width="34" height="34">
+    <span class="nav-word">Grüp</span>
+  </a>
+  <nav class="nav-links">
+    <a href="#business">For business</a>
+    <a class="nav-signin" href="https://dev.grup.co.za/sign-in">Sign in</a>
+  </nav>
+</header>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero-mark">
+    <img class="hero-anim" src="assets/grup-intro.svg" alt="Grüp" width="420" height="420">
+  </div>
+  <h1 class="hero-h">Collecting money from a group,<br><em>minus the group admin.</em></h1>
+  <p class="hero-sub">One amount. Many payers. One link. Grüp gives everyone their own
+  way to pay — and shows you exactly who has.</p>
+  <div class="hero-cta">
+    <a class="btn btn-primary" href="https://dev.grup.co.za/sign-up">Get started — it's free</a>
+    <a class="btn-ghost" href="#how">See how it works</a>
+  </div>
+</section>
+
+<!-- ============ LIVE DEMO CARD (signature) ============ -->
+<section class="demo reveal" aria-label="Example payment event">
+  <div class="demo-card" id="demoCard">
+    <div class="demo-head">
+      <div>
+        <p class="overline">Payment event</p>
+        <h3 class="demo-title">Padel Saturday</h3>
+      </div>
+      <p class="demo-each"><span class="mono">R250</span> each</p>
+    </div>
+    <div class="tape" role="img" aria-label="Collection progress">
+      <div class="tape-fill" id="tapeFill"></div>
+    </div>
+    <ul class="payers" id="payerList">
+      <li data-paid><span class="pip"></span><span class="p-name">Aisha</span><span class="p-amt mono">R250</span><span class="p-state">Paid</span></li>
+      <li data-paid><span class="pip"></span><span class="p-name">Thandi</span><span class="p-amt mono">R250</span><span class="p-state">Paid</span></li>
+      <li data-paid><span class="pip"></span><span class="p-name">Kyle</span><span class="p-amt mono">R250</span><span class="p-state">Paid</span></li>
+      <li data-paid><span class="pip"></span><span class="p-name">Megan</span><span class="p-amt mono">R250</span><span class="p-state">Paid</span></li>
+      <li><span class="pip"></span><span class="p-name">Riaan</span><span class="p-amt mono">R250</span><span class="p-state">Reminded</span></li>
+    </ul>
+    <p class="demo-foot"><span class="mono" id="collectedAmt">R0</span> of <span class="mono">R1 250</span> collected</p>
+  </div>
+  <p class="demo-caption">Your event, live — every share accounted for.</p>
+</section>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section class="how" id="how">
+  <h2 class="h2 reveal">How it works</h2>
+  <div class="steps">
+
+    <article class="step reveal">
+      <div class="step-art" aria-hidden="true">
+        <svg viewBox="0 0 120 120" fill="none" stroke="#355147" stroke-width="2.5" stroke-linecap="round">
+          <circle cx="34" cy="60" r="9"/>
+          <circle cx="88" cy="30" r="7"/><circle cx="92" cy="60" r="7"/><circle cx="88" cy="90" r="7"/>
+          <path d="M43 56 L81 33 M43 60 L85 60 M43 64 L81 87"/>
+        </svg>
+      </div>
+      <h3 class="step-h">Create a payment event</h3>
+      <p class="step-p">Set the amount, add your people. Same share or different amounts each.</p>
+    </article>
+
+    <article class="step reveal">
+      <div class="step-art" aria-hidden="true">
+        <svg viewBox="0 0 120 120" fill="none" stroke="#355147" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="38" y="18" width="44" height="84" rx="9"/>
+          <rect x="46" y="40" width="28" height="20" rx="4" fill="#35514722" stroke="none"/>
+          <path d="M50 47 h20 M50 53 h12"/>
+          <path d="M52 96 h16"/>
+        </svg>
+      </div>
+      <h3 class="step-h">Send it on WhatsApp</h3>
+      <p class="step-p">Each person gets a personal payment request — a premium card with
+      their name, the plan, and their share. No app needed to pay.</p>
+    </article>
+
+    <article class="step reveal">
+      <div class="step-art" aria-hidden="true">
+        <svg viewBox="0 0 120 120" fill="none" stroke="#355147" stroke-width="2.5" stroke-linecap="round">
+          <rect x="20" y="52" width="80" height="16" rx="8"/>
+          <rect x="20" y="52" width="52" height="16" rx="8" fill="#355147" stroke="none"/>
+          <circle cx="32" cy="88" r="4" fill="#355147" stroke="none"/>
+          <circle cx="48" cy="88" r="4" fill="#355147" stroke="none"/>
+          <circle cx="64" cy="88" r="4" fill="#355147" stroke="none"/>
+          <circle cx="80" cy="88" r="4"/>
+        </svg>
+      </div>
+      <h3 class="step-h">Watch the money come in</h3>
+      <p class="step-p">Live status as each person pays. Gentle reminders for the stragglers —
+      sent for you, so you never have to nag.</p>
+    </article>
+
+  </div>
+</section>
+
+<!-- ============ FEATURES ============ -->
+<section class="features">
+  <h2 class="h2 reveal">Made for the person doing the collecting</h2>
+  <div class="feat-grid">
+    <div class="feat reveal"><h3>Pay your way</h3><p>Cards, Apple Pay, Google Pay, instant EFT — every payer picks what works for them.</p></div>
+    <div class="feat reveal"><h3>Straight to your bank</h3><p>Money you collect settles directly into your own bank account. Grüp never holds your funds.</p></div>
+    <div class="feat reveal"><h3>Everyone sees where it stands</h3><p>Paid, pending, reminded — your event dashboard keeps the whole picture honest.</p></div>
+    <div class="feat reveal"><h3>Reminders without the awkwardness</h3><p>One tap re-sends a friendly nudge to anyone still outstanding.</p></div>
+    <div class="feat reveal"><h3>Your requests find you</h3><p>Got a Grüp account? Payment requests sent to your number appear right on your dashboard.</p></div>
+    <div class="feat reveal"><h3>Built for South Africa</h3><p>Rand-native, bank-friendly, WhatsApp-first.</p></div>
+  </div>
+</section>
+
+<!-- ============ BUSINESS ============ -->
+<section class="business reveal" id="business">
+  <div class="biz-inner">
+    <p class="overline overline-light">Grüp for Business <span class="badge">Coming soon</span></p>
+    <h2 class="biz-h">Collect from clients,<br><em>with your name on it.</em></h2>
+    <p class="biz-p">Your logo and brand colours on every payment request and checkout.
+    Requests sent from a verified WhatsApp business profile your clients can trust.
+    Invoices generated automatically when payments land.</p>
+    <ul class="biz-points">
+      <li>Custom branding</li>
+      <li>Verified WhatsApp sending</li>
+      <li>Automatic invoicing</li>
+    </ul>
+    <a class="btn btn-light" href="mailto:hello@grup.co.za?subject=Gr%C3%BCp%20for%20Business%20waitlist">Join the waitlist</a>
+  </div>
+</section>
+
+<!-- ============ PLANNER ============ -->
+<section class="planner reveal">
+  <p class="overline">The Planner <span class="badge badge-dark">Coming soon</span></p>
+  <h2 class="planner-h">Plan it and collect for it, in the same place.</h2>
+  <p class="planner-p">The trip, the dinner, the tournament — dates, decisions and deposits, together at last.</p>
+</section>
+
+<!-- ============ TRUST ============ -->
+<section class="trust reveal">
+  <p>Payments are processed by accredited, PCI-compliant payment partners.
+  Grüp never stores card details, and collected funds settle directly to the
+  organiser's own bank account.</p>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="foot-brand">
+    <img src="assets/grup-logo.svg" alt="" width="28" height="28">
+    <span>© <span id="yr">2026</span> Grüp</span>
+  </div>
+  <nav class="foot-links">
+    <a href="terms.html">Terms of Service</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="mailto:hello@grup.co.za">Contact</a>
+  </nav>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
